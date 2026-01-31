@@ -15,6 +15,6 @@
 
         {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
 
-        {{ Powered by (dict "Generator" $Generator) | safeHTML }}
+        Powered by {{ (dict "Generator" $Generator) | safeHTML }}
     </section>
 </footer>
