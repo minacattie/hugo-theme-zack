@@ -12,9 +12,6 @@
         {{ with .Site.Params.footer.customText }}
             {{ . | safeHTML }} <br/>
         {{ end }}
-
-        {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
-
-        Powered by {{ (dict "Generator" $Generator) | safeHTML }}
+        Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>
     </section>
 </footer>
